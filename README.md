@@ -7,16 +7,17 @@ This project contains automated tests for the Hudl login page using Selenium Web
 This test suite verifies various functionalities of the Hudl login page, including:
 - Standard login process
 - Password reset flow
-- Login with Google
-- Account creation process
+- Account creation display page
+- Verification of successful redirects for Apple, Google and Facebook authent
 - Error handling for invalid inputs
 
 ## Installation
 
 1. Clone the repository:
 
-git clone https://github.com/aserghini53/hudl-login-tests.git
-cd hudl-login-tests
+git clone https://github.com/aserghini53/hudl_login_automation_project
+
+cd hudl_login_automation_project
 
 2. Set up a virtual environment (optional but recommended):
     
@@ -48,7 +49,7 @@ pytest tests/test_login.py --html=report.html --self-contained-html
 
 To run a specific method in a class in the terminal using the following command:
 
-pytest tests/test_login.py::TestLogin::test_valid_login --html=report.html --self-contained-html
+pytest tests/test_login.py::TestLogin::test_login_with_valid_email_and_password --html=report.html --self-contained-html
 
 
 ## Project Structure
@@ -57,16 +58,11 @@ pytest tests/test_login.py::TestLogin::test_valid_login --html=report.html --sel
 - `tests/`: Contains all test files
 - `pages/`: Page Object Model classes
 - `tests_data/`: Contains all test data
+- `screenshots/`: Contains all screeshots generated after errors
 - `conftest.py`: pytest fixtures and configurations
 - `requirements.txt`: List of project dependencies
+- `README.md`: List of project dependencies
 
-## Key Features
-
-- Automated login tests
-- Password reset flow verification
-- Google SSO testing
-- Cross-browser testing capability
-- Page Object Model design pattern
 
 ## Dependencies
 
