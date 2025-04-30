@@ -1,0 +1,13 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+# macOS system files
+.DS_Store
+# Test cache
+.pytest_cache/
+# Virtual environment
+source/
+!source/.gitignore  # Keep if the existing .gitignore inside is needed
+# Reports
+*.html
+*.log

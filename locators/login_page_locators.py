@@ -1,0 +1,21 @@
+# login_page_locators.py
+
+class LoginPageLocators:
+	PAGE_LOGO = "custom-prompt-logo"
+	PAGE_LOGIN_TITLE = "//h1[text()='Log In']"
+	EMAIL_INPUT = "username"
+	CONTINUE_TO_PASSWORD_BUTTON = "button._button-login-id"
+	GOOGLE_AUTH_BUTTON = "button[data-provider='google']"
+	FACEBOOK_AUTH_BUTTON = "button[data-provider='facebook']"
+	APPLE_AUTH_BUTTON = "button[data-provider='apple']"
+	PASSWORD_INPUT = "password"
+	CONTINUE_TO_LOGIN_BUTTON = "._button-login-password"
+	INVALID_EMAIL_ERROR_MESSAGE = "error-element-username"
+	INVALID_EMAIL_OR_PASSWORD_ERROR_MESSAGE ="error-element-password"
+	INVALID_PASSWORD_ERROR_MESSAGE = "error-element-password"
+	EDIT_EMAIL = "a[data-link-name='edit-username']"
+	EMAIL_INPUT_GREYED = "span.ulp-authenticator-selector-text"
+	PRIVACY_POLICY_LINK = "Privacy Policy"
+	TERMS_OF_SERVICE_LINK = "Terms of Service"
+	CREATE_ACCOUNT_LINK = "Create Account"
+	FORGOT_PASSWORD_LINK = "Forgot Password"
