@@ -7,7 +7,9 @@ __pycache__/
 .pytest_cache/
 # Virtual environment
 source/
-!source/.gitignore  # Keep if the existing .gitignore inside is needed
+!source/.gitignore
 # Reports
 *.html
 *.log
+# Ignore Pycharm settings
+.idea/
